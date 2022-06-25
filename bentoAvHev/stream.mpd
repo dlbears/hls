@@ -5,8 +5,13 @@
     <!-- Video -->
     <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
       <SegmentTemplate timescale="1000" duration="21688" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
-      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="1671950"/>
+      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="1126235"/>
       <Representation id="video/av01/2" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1280" height="720" scanType="progressive" frameRate="24000/1001" bandwidth="568366"/>
+    </AdaptationSet>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="1000" duration="10010" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="video/vp09/1" codecs="vp09.00.40.08.00.01.01.01.00" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="1782911"/>
+      <Representation id="video/vp09/2" codecs="vp09.00.31.08.00.01.01.01.00" width="1280" height="720" scanType="progressive" frameRate="24000/1001" bandwidth="990436"/>
     </AdaptationSet>
     <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
       <SegmentTemplate timescale="1000" duration="10427" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
