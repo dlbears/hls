@@ -2,7 +2,8 @@
 <html>
   <head>
     <!-- Shaka Player compiled library: -->
-    <script src="dist/shaka-player.compiled.js"></script>
+    <!-- <script src="dist/shaka-player.compiled.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.2.9/shaka-player.compiled.js" integrity="sha512-RWdYEXqmGWs7URnil+8f26r6yuVmjZbQAn3vlrqn2oNW7uZPMdH9FadLsPwklNDRos7ky21wjY5Wqym7VCHiPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Your application source: -->
     <!-- <script src="myapp.js"></script> -->
   </head>
@@ -21,7 +22,7 @@ const manifestUri =
 
 function initApp() {
   // Install built-in polyfills to patch browser incompatibilities.
-  shaka.polyfill.installAll();
+  // shaka.polyfill.installAll();
 
   // Check to see if the browser supports the basic APIs Shaka needs.
   if (shaka.Player.isBrowserSupported()) {
