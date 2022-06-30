@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT10.01S" mediaPresentationDuration="PT4M42.157S" type="static">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-639 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="1000" duration="10010" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="video/av01/1" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="238714"/>
+      <Representation id="video/av01/2" codecs="av01.0.00M.10.0.110.01.01.01.0" width="1280" height="720" scanType="progressive" frameRate="24000/1001" bandwidth="247964"/>
+    </AdaptationSet>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="1000" duration="7102" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="video/vp09" codecs="vp09.00.40.08.00.01.01.01.00" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="1374144"/>
+    </AdaptationSet>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <SegmentTemplate timescale="1000" duration="10427" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="video/hvc1/1" codecs="hvc1.1.6.L123.b0" width="1920" height="1080" scanType="progressive" frameRate="24000/1001" bandwidth="1918809"/>
+      <Representation id="video/hvc1/2" codecs="hvc1.1.6.L123.b0" width="1280" height="720" scanType="progressive" frameRate="24000/1001" bandwidth="1935930"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet mimeType="audio/mp4" startWithSAP="1" segmentAlignment="true">
+      <SegmentTemplate timescale="1000" duration="10010" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="audio/und/mp4a.40.2" codecs="mp4a.40.2" bandwidth="129518" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:mpegB:cicp:ChannelConfiguration" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
